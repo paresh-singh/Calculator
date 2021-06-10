@@ -21,10 +21,15 @@ class formula {
         // only first few numbers of l should be equal to L
         if(l == L){
             // green background
-
+            setColor(0,R.drawable.green)
         }else{
-            // red background
+            setColor(1,R.drawable.red)
+            // red background and vibration
         }
         return l.toString()
+    }
+
+    private fun setColor(opt:Int , Color : Int ) {
+        TODO("Not yet implemented")
     }
 }
