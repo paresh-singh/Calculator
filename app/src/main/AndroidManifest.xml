@@ -3,6 +3,7 @@
     package="com.example.examcalculations">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamCalculations">
-        <activity android:name=".Practice_"></activity>
+        <activity android:name=".spi_factor"></activity>
+        <activity android:name=".Practice_" />
         <activity android:name=".Calc_for_Lorentz" />
         <activity android:name=".MainActivity">
             <intent-filter>

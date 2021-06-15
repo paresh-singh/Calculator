@@ -24,7 +24,7 @@
         android:id="@+id/toPsi"
         android:layout_width="164dp"
         android:layout_height="50dp"
-        android:text="psi calc"
+        android:text="spi calc"
         app:backgroundTint="#0A4A0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -3,6 +3,7 @@ package com.example.examcalculations
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Vibrator
 import android.text.Layout
 import android.view.LayoutInflater
@@ -34,6 +35,12 @@ class Practice_ : AppCompatActivity() {
             result.text = answer
             if (answer == lorFac.text.toString()){
                 lay.setBackgroundColor(Color.parseColor("#00ff00"))
+                val timer = object: CountDownTimer(2000, 1000) {
+                    override fun onTick(millisUntilFinished: Long) {}
+                    override fun onFinish() {
+                        lay.setBackgroundResource(R.drawable.bg3)
+                    }
+                }
 
             }else{
                 lay.setBackgroundColor(Color.parseColor("#ff0000"))

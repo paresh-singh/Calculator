@@ -2,37 +2,40 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/practicelayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/practicelayout"
+    android:background="@drawable/bg5"
     tools:context=".Practice_">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="285dp"
-        android:layout_height="64dp"
+        android:layout_width="246dp"
+        android:layout_height="60dp"
         android:gravity="center"
         android:text="Practice session"
-        android:textColor="#051478"
-        android:textSize="24sp"
+        android:textColor="#C13364"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:text="Check answer"
-        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lorFac" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
 
     <TextView
         android:id="@+id/answer"
@@ -40,35 +43,40 @@
         android:layout_height="58dp"
         android:background="#F1E7C1"
         android:gravity="center"
-        android:hint="Answer"
+        android:hint="Correct Answer"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.46" />
 
     <EditText
         android:id="@+id/velocity"
-        android:layout_width="201dp"
-        android:layout_height="40dp"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
         android:background="#F6EFEF"
         android:ems="10"
+
         android:gravity="center"
         android:hint="velocity"
         android:inputType="numberSigned"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/lorFac"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.002" />
 
     <EditText
         android:id="@+id/lorFac"
-        android:layout_width="203dp"
-        android:layout_height="47dp"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="160dp"
         android:layout_weight="1"
         android:background="#F1EEEE"
         android:ems="10"
@@ -76,11 +84,12 @@
         android:hint="Lorentz"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/velocity" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.05" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
