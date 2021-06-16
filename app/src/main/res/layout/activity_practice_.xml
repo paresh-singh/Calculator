@@ -11,19 +11,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="246dp"
+        android:layout_width="308dp"
         android:layout_height="60dp"
         android:gravity="center"
         android:text="Practice session"
-        android:textColor="#C13364"
+        android:textColor="#100F10"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <Button
         android:id="@+id/button2"
@@ -32,10 +32,10 @@
         android:text="Check answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
         android:id="@+id/answer"
@@ -51,12 +51,12 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.511" />
 
     <EditText
         android:id="@+id/velocity"
-        android:layout_width="178dp"
-        android:layout_height="48dp"
+        android:layout_width="189dp"
+        android:layout_height="52dp"
         android:layout_marginTop="52dp"
         android:background="#F6EFEF"
         android:ems="10"
@@ -74,8 +74,8 @@
 
     <EditText
         android:id="@+id/lorFac"
-        android:layout_width="173dp"
-        android:layout_height="52dp"
+        android:layout_width="183dp"
+        android:layout_height="56dp"
         android:layout_marginTop="160dp"
         android:layout_weight="1"
         android:background="#F1EEEE"

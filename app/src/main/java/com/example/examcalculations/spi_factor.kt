@@ -19,10 +19,11 @@ class spi_factor : AppCompatActivity() {
     lateinit var timeMinute: TextView
     lateinit var timeSecond: TextView
     lateinit var spiFactor: TextView
+    lateinit var hour: TextView
+    lateinit var min: TextView
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        val list = formula().spiFac()
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_spi_factor)
@@ -31,8 +32,8 @@ class spi_factor : AppCompatActivity() {
         timeMinute = findViewById(R.id.mins)
         timeSecond = findViewById(R.id.secs)
         spiFactor  = findViewById(R.id.spi)
-
-
+        hour       = findViewById(R.id.hourFactorial)
+        min        = findViewById(R.id.minCube)
 
         val timer = Timer()
         timer?.scheduleAtFixedRate(object : TimerTask() {
@@ -47,10 +48,12 @@ class spi_factor : AppCompatActivity() {
     private fun updateTimer() {
         val list = formula().spiFac()
         runOnUiThread {
-            timeHour.text   =  "Th!    = " + list[0]
-            timeMinute.text =  "Tm^3 = " + list[1]
-            timeSecond.text =  "Ts     = " + list[2]
-            spiFactor.text  =  "Spi    = " + list[3]
+            timeHour.text   =  list[0]
+            timeMinute.text =  list[1]
+            timeSecond.text =  list[2]
+            spiFactor.text  =  "Spi   = " + list[3]
+            hour.text = list[4]
+            min.text = list[5]
         }
     }
 }

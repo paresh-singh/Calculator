@@ -45,9 +45,9 @@ class formula {
         for (i in 1..tHour) {
             factorial *= i.toLong()
         }
-        
-        val spi = (factorial/(Tm.toDouble().pow(3.0) + Ts.toDouble())).toFloat()
-        return arrayListOf( tHour.toString() , Tm.toString() , Ts.toString() , spi.toString())
+        val min = Tm.toDouble().pow(3.0)
+        val spi = (factorial/(min + Ts.toDouble())).toFloat()
+        return arrayListOf( tHour.toString() , Tm.toString() , Ts.toString() , spi.toString() , factorial.toString() , min.toString())
     }
 
 }
